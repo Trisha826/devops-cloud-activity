@@ -14,5 +14,5 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run a simple script
-        run: echo "CI workflow executed successfully!"
+      - name: Force CI Failure
+        run: exit 1
